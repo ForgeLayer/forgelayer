@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ForgeLayer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>ForgeLayer</h1>
+        <a href="mailto:forgelayer.devops@gmail.com" class="consultation-btn">Schedule Free Consultation</a>
+    </header>
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+
+            <div class="service" onclick="showServiceDetails('CI/CD Pipeline')">
+                <img src="images/cicd.png" alt="CI/CD Pipeline" />
+                <h3>CI/CD Pipeline</h3>
+            </div>
+
+            <div class="service" onclick="showServiceDetails('Infrastructure as Code')">
+                <img src="images/iac.png" alt="Infrastructure as Code" />
+                <h3>Infrastructure as Code</h3>
+            </div>
+
+            <div class="service" onclick="showServiceDetails('Kubernetes')">
+                <img src="images/kubernetes.png" alt="Kubernetes" />
+                <h3>Kubernetes</h3>
+            </div>
+
+            <div class="service" onclick="showServiceDetails('Monitoring & Logging')">
+                <img src="images/monitoring.png" alt="Monitoring & Logging" />
+                <h3>Monitoring & Logging</h3>
+            </div>
+
+            <div class="service" onclick="showServiceDetails('Cloud Cost Optimization')">
+                <img src="images/costopt.png" alt="Cloud Cost Optimization" />
+                <h3>Cloud Cost Optimization</h3>
+            </div>
+
+            <div class="service" onclick="showServiceDetails('DevSecOps')">
+                <img src="images/devsecops.png" alt="DevSecOps" />
+                <h3>DevSecOps</h3>
+            </div>
+
+        </div>
+        <div id="service-details" class="service-details"></div>
+    </section>
+    <script>
+        function showServiceDetails(service) {
+            const details = {
+                "CI/CD Pipeline": "We automate your build, test, and deployment pipelines.",
+                "Infrastructure as Code": "We help you manage infrastructure using tools like Terraform.",
+                "Kubernetes": "Deploy and scale containers using Kubernetes.",
+                "Monitoring & Logging": "Track application health and logs with Grafana, Prometheus, ELK.",
+                "Cloud Cost Optimization": "Optimize your cloud resources and cut unnecessary costs.",
+                "DevSecOps": "Embed security at every stage of your DevOps process."
+            };
+            const container = document.getElementById('service-details');
+            container.innerHTML = `<p>${details[service] || 'Select a service to view details.'}</p>`;
+        }
+    </script>
+</body>
+</html>
