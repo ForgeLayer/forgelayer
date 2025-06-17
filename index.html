@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ForgeLayer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 class="brand-title">ForgeLayer</h1>
+    <p>DevOps & Cloud Engineering Consulting</p>
+    <a href="mailto:forgelayer.devops@gmail.com?subject=Free Consultation Request&body=Hi ForgeLayer Team," class="cta-button">Schedule Free Consultation</a>
+  </header>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-box" onclick="showDetails('ci-cd')">
+        <img src="images/cicd.png" alt="CI/CD Pipeline" />
+        <h3>CI/CD Pipeline Setup</h3>
+      </div>
+      <div class="service-box" onclick="showDetails('iac')">
+        <img src="images/iac.png" alt="Infrastructure as Code" />
+        <h3>Infrastructure as Code (IaC)</h3>
+      </div>
+      <div class="service-box" onclick="showDetails('k8s')">
+        <img src="images/kubernetes.png" alt="Kubernetes" />
+        <h3>Kubernetes & Container Orchestration</h3>
+      </div>
+    </div>
+
+    <div id="ci-cd" class="service-detail hidden">
+      <h4>CI/CD Pipeline Setup</h4>
+      <p>We implement secure and scalable CI/CD pipelines using GitHub Actions, Azure DevOps, or Jenkins for rapid and safe deployment workflows.</p>
+    </div>
+
+    <div id="iac" class="service-detail hidden">
+      <h4>Infrastructure as Code (IaC)</h4>
+      <p>Using Terraform and ARM templates, we provision and manage cloud infrastructure efficiently and consistently across environments.</p>
+    </div>
+
+    <div id="k8s" class="service-detail hidden">
+      <h4>Kubernetes & Container Orchestration</h4>
+      <p>Deploy, scale, and monitor your applications using Kubernetes, Helm, and Docker with high availability and security best practices.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email us at: <a href="mailto:forgelayer.devops@gmail.com">forgelayer.devops@gmail.com</a></p>
+    <form action="mailto:forgelayer.devops@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="email" name="Email" placeholder="Your Email" required />
+      <textarea name="Message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script>
+    function showDetails(id) {
+      document.querySelectorAll('.service-detail').forEach(div => div.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
