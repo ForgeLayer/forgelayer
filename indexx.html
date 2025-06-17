@@ -9,51 +9,50 @@
 </head>
 <body>
     <header>
-        <h1 class="logo">ForgeLayer</h1>
-        <a href="mailto:forgelayer.devops@gmail.com" class="consult-btn">Schedule Free Consultation</a>
+        <h1>ForgeLayer</h1>
+        <p>Empowering Cloud Infrastructure & DevOps Automation</p>
+        <a href="#contact" class="cta">Schedule a Free Consultation</a>
     </header>
 
+    <section id="about">
+        <h2>About Us</h2>
+        <p>ForgeLayer is a boutique DevOps consulting brand founded by a seasoned Azure DevOps engineer. We help startups and enterprises build scalable and secure CI/CD pipelines using modern DevOps practices.</p>
+    </section>
+
     <section id="services">
-        <h2>Our Services</h2>
-        <div class="service-container">
-            <div class="service" onclick="toggleDetails('cicd')">
-                <img src="images/cicd.png" alt="CI/CD">
-                <p>CI/CD</p>
-                <div id="cicd" class="service-detail">We set up automated CI/CD pipelines.</div>
-            </div>
-            <div class="service" onclick="toggleDetails('iac')">
-                <img src="images/iac.png" alt="Infrastructure as Code">
-                <p>Infrastructure as Code (IaC)</p>
-                <div id="iac" class="service-detail">Terraform & automation for infrastructure.</div>
-            </div>
-            <div class="service" onclick="toggleDetails('kubernetes')">
-                <img src="images/kubernetes.png" alt="Kubernetes">
-                <p>Kubernetes</p>
-                <div id="kubernetes" class="service-detail">K8s clusters setup & management.</div>
-            </div>
-            <div class="service" onclick="toggleDetails('monitoring')">
-                <img src="images/monitoring.png" alt="Monitoring">
-                <p>Monitoring & Logging</p>
-                <div id="monitoring" class="service-detail">Grafana, Prometheus, ELK Stack, etc.</div>
-            </div>
-            <div class="service" onclick="toggleDetails('cloudops')">
-                <img src="images/cloudops.png" alt="CloudOps">
-                <p>CloudOps</p>
-                <div id="cloudops" class="service-detail">Cloud infrastructure & operations.</div>
-            </div>
-            <div class="service" onclick="toggleDetails('consulting')">
-                <img src="images/consulting.png" alt="Consulting">
-                <p>DevOps Consulting</p>
-                <div id="consulting" class="service-detail">Personalized DevOps strategy & support.</div>
-            </div>
+        <h2>Services</h2>
+        <div class="service-grid">
+            <a href="#ci-cd" class="service-card">
+                <img src="https://via.placeholder.com/150?text=CI%2FCD" alt="CI/CD Pipelines">
+                <h3>CI/CD Pipeline Setup</h3>
+            </a>
+            <a href="#iac" class="service-card">
+                <img src="https://via.placeholder.com/150?text=IaC" alt="Infrastructure as Code">
+                <h3>Infrastructure as Code</h3>
+            </a>
+            <a href="#docker" class="service-card">
+                <img src="https://via.placeholder.com/150?text=Docker+%26+K8s" alt="Docker & Kubernetes">
+                <h3>Docker & Kubernetes</h3>
+            </a>
+            <a href="#monitoring" class="service-card">
+                <img src="https://via.placeholder.com/150?text=Monitoring" alt="Monitoring & Logging">
+                <h3>Monitoring & Logging</h3>
+            </a>
+            <a href="#cloud" class="service-card">
+                <img src="https://via.placeholder.com/150?text=Cloud+Migration" alt="Cloud Migration">
+                <h3>Cloud Migration & Optimization</h3>
+            </a>
         </div>
     </section>
 
-    <script>
-        function toggleDetails(id) {
-            const el = document.getElementById(id);
-            el.style.display = el.style.display === "block" ? "none" : "block";
-        }
-    </script>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: hello@forgelayer.com</p>
+        <p>📍 India (Serving clients globally)</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ForgeLayer. All rights reserved.</p>
+    </footer>
 </body>
 </html>
